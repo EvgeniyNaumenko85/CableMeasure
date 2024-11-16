@@ -29,6 +29,7 @@ func CreateUI() {
 	w := a.NewWindow(NewWindowName)
 	//w.SetTitle("My Custom Title")
 	w.Resize(fyne.NewSize(500, 650))
+	w.SetFixedSize(true)
 	w.CenterOnScreen()
 	a.Settings().SetTheme(theme.DarkTheme())
 
